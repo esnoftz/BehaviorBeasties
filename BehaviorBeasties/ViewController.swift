@@ -11,8 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
+    
+    @IBAction func beastieClick(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "chooseBeastieSegue", sender: nil)
+        
+    }
+    
 
 
 }
