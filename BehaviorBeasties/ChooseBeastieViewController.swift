@@ -44,49 +44,49 @@ class ChooseBeastieViewController: UIViewController {
     
     @IBAction func redTapAction(_ sender: UITapGestureRecognizer) {
         print("red")
-        AppData.selectedBeastie = "red"
+        AppData.selectedBeastie = "Red Beastie"
         performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func orangeTapAction(_ sender: UITapGestureRecognizer) {
         print("orange")
-        AppData.selectedBeastie = "orange"
+        AppData.selectedBeastie = "Orange Beastie"
         performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func yellowTapAction(_ sender: UITapGestureRecognizer) {
         print("yellow")
-        AppData.selectedBeastie = "yellow"
+        AppData.selectedBeastie = "Yellow Beastie"
         performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func greenTapAction(_ sender: UITapGestureRecognizer) {
         print("green")
-        AppData.selectedBeastie = "green"
+        AppData.selectedBeastie = "Green Beastie"
         performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func tealTapAction(_ sender: UITapGestureRecognizer) {
         print("teal")
-        AppData.selectedBeastie = "teal"
+        AppData.selectedBeastie = "Teal Beastie"
         performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func blueTapAction(_ sender: UITapGestureRecognizer) {
         print("blue")
-        AppData.selectedBeastie = "blue"
+        AppData.selectedBeastie = "Blue Beastie"
         performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func purpleTapAction(_ sender: UITapGestureRecognizer) {
         print("purple")
-        AppData.selectedBeastie = "purple"
+        AppData.selectedBeastie = "Purple Beastie"
         performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func pinkTapAction(_ sender: UITapGestureRecognizer) {
         print("pink")
-        AppData.selectedBeastie = "pink"
+        AppData.selectedBeastie = "Pink Beastie"
         performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
