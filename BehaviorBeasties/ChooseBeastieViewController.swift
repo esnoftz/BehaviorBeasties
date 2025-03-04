@@ -44,34 +44,50 @@ class ChooseBeastieViewController: UIViewController {
     
     @IBAction func redTapAction(_ sender: UITapGestureRecognizer) {
         print("red")
+        AppData.selectedBeastie = "red"
+        performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func orangeTapAction(_ sender: UITapGestureRecognizer) {
         print("orange")
+        AppData.selectedBeastie = "orange"
+        performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func yellowTapAction(_ sender: UITapGestureRecognizer) {
         print("yellow")
+        AppData.selectedBeastie = "yellow"
+        performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func greenTapAction(_ sender: UITapGestureRecognizer) {
         print("green")
+        AppData.selectedBeastie = "green"
+        performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func tealTapAction(_ sender: UITapGestureRecognizer) {
         print("teal")
+        AppData.selectedBeastie = "teal"
+        performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func blueTapAction(_ sender: UITapGestureRecognizer) {
         print("blue")
+        AppData.selectedBeastie = "blue"
+        performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func purpleTapAction(_ sender: UITapGestureRecognizer) {
         print("purple")
+        AppData.selectedBeastie = "purple"
+        performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
     @IBAction func pinkTapAction(_ sender: UITapGestureRecognizer) {
         print("pink")
+        AppData.selectedBeastie = "pink"
+        performSegue(withIdentifier: "chosenBeastieSegue", sender: nil)
     }
     
 }

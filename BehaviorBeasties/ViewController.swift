@@ -7,6 +7,10 @@
 
 import UIKit
 
+class AppData {
+    static var selectedBeastie = ""
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
