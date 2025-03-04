@@ -158,56 +158,88 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-T0-2PL">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-T0-2PL">
                                         <rect key="frame" x="0.0" y="143" width="393" height="143"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-nF-z7M">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-nF-z7M">
                                                 <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="143"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="bW1-H3-Hux" appends="YES" id="4b2-Ru-wVM"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orange Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="Ose-kI-CvY">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orange Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="Ose-kI-CvY">
                                                 <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="143"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="qCH-fc-hNO" appends="YES" id="N0T-Nq-I4A"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="eLk-nF-z7M" firstAttribute="width" secondItem="EFn-T0-2PL" secondAttribute="width" multiplier="0.5" id="mbt-rP-YuV"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-vy-hMd">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-vy-hMd">
                                         <rect key="frame" x="0.0" y="286" width="393" height="143"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yellow Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="b4M-jF-4vS">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yellow Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="b4M-jF-4vS">
                                                 <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="143"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="mjb-2B-WUI" appends="YES" id="IeM-qq-AkY"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="UKt-Vk-Rqy">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="UKt-Vk-Rqy">
                                                 <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="143"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="8L7-OJ-HTj" appends="YES" id="ipv-qS-Dlp"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="b4M-jF-4vS" firstAttribute="width" secondItem="1Vg-vy-hMd" secondAttribute="width" multiplier="0.5" id="uI0-ip-SlJ"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bv-sS-r7D">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5bv-sS-r7D">
                                         <rect key="frame" x="0.0" y="429" width="393" height="143"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Teal Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="r8N-9s-8pd">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Teal Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="r8N-9s-8pd">
                                                 <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="143"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="rK3-NK-qfi" appends="YES" id="elF-Kz-BaU"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="FjN-pH-Ug6">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="FjN-pH-Ug6">
                                                 <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="143"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Q85-x4-zcx" appends="YES" id="xNl-Oy-7wT"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="r8N-9s-8pd" firstAttribute="width" secondItem="5bv-sS-r7D" secondAttribute="width" multiplier="0.5" id="qQy-Mb-6Bx"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-x7-VID">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-x7-VID">
                                         <rect key="frame" x="0.0" y="572" width="393" height="143"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Purple Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-eO-sHM">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Purple Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-eO-sHM">
                                                 <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="143"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="2zf-HC-J3P" appends="YES" id="zim-CY-DCJ"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pink Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="eAn-zK-V4B">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pink Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="eAn-zK-V4B">
                                                 <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="143"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="R0n-4X-B34" appends="YES" id="RcC-NR-fOr"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -236,6 +268,46 @@
                     <navigationItem key="navigationItem" id="cEr-sC-6Zo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKs-9T-JD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bW1-H3-Hux">
+                    <connections>
+                        <action selector="redTapAction:" destination="6rQ-xt-Wnf" id="czT-HP-q10"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qCH-fc-hNO">
+                    <connections>
+                        <action selector="orangeTapAction:" destination="6rQ-xt-Wnf" id="eaZ-yZ-PGH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mjb-2B-WUI">
+                    <connections>
+                        <action selector="yellowTapAction:" destination="6rQ-xt-Wnf" id="JLv-Pe-xG2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8L7-OJ-HTj">
+                    <connections>
+                        <action selector="greenTapAction:" destination="6rQ-xt-Wnf" id="2Yr-eV-GkS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rK3-NK-qfi">
+                    <connections>
+                        <action selector="tealTapAction:" destination="6rQ-xt-Wnf" id="ibx-Lm-E9l"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Q85-x4-zcx">
+                    <connections>
+                        <action selector="blueTapAction:" destination="6rQ-xt-Wnf" id="djw-nu-uzh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="2zf-HC-J3P">
+                    <connections>
+                        <action selector="purpleTapAction:" destination="6rQ-xt-Wnf" id="4Qz-Tx-vyy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="R0n-4X-B34">
+                    <connections>
+                        <action selector="pinkTapAction:" destination="6rQ-xt-Wnf" id="qVi-0E-fIR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="900"/>
         </scene>
@@ -270,7 +342,7 @@
         <image name="Teal Beastie" width="174" height="226"/>
         <image name="Yellow Beastie" width="174" height="226"/>
         <systemColor name="systemTealColor">
-            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -42,5 +42,36 @@ class ChooseBeastieViewController: UIViewController {
         return cell
     }*/
     
-
+    @IBAction func redTapAction(_ sender: UITapGestureRecognizer) {
+        print("red")
+    }
+    
+    @IBAction func orangeTapAction(_ sender: UITapGestureRecognizer) {
+        print("orange")
+    }
+    
+    @IBAction func yellowTapAction(_ sender: UITapGestureRecognizer) {
+        print("yellow")
+    }
+    
+    @IBAction func greenTapAction(_ sender: UITapGestureRecognizer) {
+        print("green")
+    }
+    
+    @IBAction func tealTapAction(_ sender: UITapGestureRecognizer) {
+        print("teal")
+    }
+    
+    @IBAction func blueTapAction(_ sender: UITapGestureRecognizer) {
+        print("blue")
+    }
+    
+    @IBAction func purpleTapAction(_ sender: UITapGestureRecognizer) {
+        print("purple")
+    }
+    
+    @IBAction func pinkTapAction(_ sender: UITapGestureRecognizer) {
+        print("pink")
+    }
+    
 }
