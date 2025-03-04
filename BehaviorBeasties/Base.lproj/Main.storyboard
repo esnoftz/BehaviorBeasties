@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -150,51 +149,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Beastie!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCQ-Yr-x85">
-                                <rect key="frame" x="0.0" y="103" width="393" height="64"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mBX-y5-pZ7">
-                                <rect key="frame" x="0.0" y="233" width="393" height="557"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2yV-ac-xXX">
-                                    <size key="itemSize" width="143" height="151"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="bv4-Y1-0v2">
-                                        <rect key="frame" x="96.666666666666671" y="0.0" width="200" height="200"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X3Q-5N-ZZ0">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                        <size key="customSize" width="200" height="200"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IAK-MM-9Os">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Beastie!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCQ-Yr-x85">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="143"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-T0-2PL">
+                                        <rect key="frame" x="0.0" y="143" width="393" height="143"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-nF-z7M">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="143"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orange Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="Ose-kI-CvY">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="143"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="eLk-nF-z7M" firstAttribute="width" secondItem="EFn-T0-2PL" secondAttribute="width" multiplier="0.5" id="mbt-rP-YuV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-vy-hMd">
+                                        <rect key="frame" x="0.0" y="286" width="393" height="143"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yellow Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="b4M-jF-4vS">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="143"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="UKt-Vk-Rqy">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="143"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="b4M-jF-4vS" firstAttribute="width" secondItem="1Vg-vy-hMd" secondAttribute="width" multiplier="0.5" id="uI0-ip-SlJ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bv-sS-r7D">
+                                        <rect key="frame" x="0.0" y="429" width="393" height="143"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Teal Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="r8N-9s-8pd">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="143"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="FjN-pH-Ug6">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="143"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="r8N-9s-8pd" firstAttribute="width" secondItem="5bv-sS-r7D" secondAttribute="width" multiplier="0.5" id="qQy-Mb-6Bx"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-x7-VID">
+                                        <rect key="frame" x="0.0" y="572" width="393" height="143"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Purple Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-eO-sHM">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="143"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pink Beastie" translatesAutoresizingMaskIntoConstraints="NO" id="eAn-zK-V4B">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="143"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Yt5-eO-sHM" firstAttribute="width" secondItem="H8C-x7-VID" secondAttribute="width" multiplier="0.5" id="5wb-cK-qvo"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="H8C-x7-VID" firstAttribute="height" secondItem="IAK-MM-9Os" secondAttribute="height" multiplier="0.2" id="DQI-lE-7In"/>
+                                    <constraint firstItem="tCQ-Yr-x85" firstAttribute="height" secondItem="IAK-MM-9Os" secondAttribute="height" multiplier="0.2" id="SBm-Qc-VvD"/>
+                                    <constraint firstItem="5bv-sS-r7D" firstAttribute="height" secondItem="IAK-MM-9Os" secondAttribute="height" multiplier="0.2" id="WMf-vU-ke2"/>
+                                    <constraint firstItem="1Vg-vy-hMd" firstAttribute="height" secondItem="IAK-MM-9Os" secondAttribute="height" multiplier="0.2" id="ber-JH-eeN"/>
+                                    <constraint firstItem="EFn-T0-2PL" firstAttribute="height" secondItem="IAK-MM-9Os" secondAttribute="height" multiplier="0.2" id="n9t-ky-RST"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NQ5-RF-Rx8"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="mBX-y5-pZ7" firstAttribute="top" secondItem="tCQ-Yr-x85" secondAttribute="bottom" constant="66" id="6f1-eZ-rqg"/>
-                            <constraint firstItem="mBX-y5-pZ7" firstAttribute="trailing" secondItem="NQ5-RF-Rx8" secondAttribute="trailing" id="VKa-82-4NU"/>
-                            <constraint firstItem="NQ5-RF-Rx8" firstAttribute="trailing" secondItem="tCQ-Yr-x85" secondAttribute="trailing" id="Wcx-ga-GON"/>
-                            <constraint firstItem="mBX-y5-pZ7" firstAttribute="leading" secondItem="NQ5-RF-Rx8" secondAttribute="leading" id="j80-oQ-iOR"/>
-                            <constraint firstItem="tCQ-Yr-x85" firstAttribute="leading" secondItem="NQ5-RF-Rx8" secondAttribute="leading" id="nVI-tp-Fez"/>
-                            <constraint firstItem="tCQ-Yr-x85" firstAttribute="top" secondItem="NQ5-RF-Rx8" secondAttribute="top" id="oEs-EC-i3b"/>
-                            <constraint firstItem="NQ5-RF-Rx8" firstAttribute="bottom" secondItem="mBX-y5-pZ7" secondAttribute="bottom" constant="28" id="tbr-1v-wXX"/>
+                            <constraint firstItem="IAK-MM-9Os" firstAttribute="leading" secondItem="NQ5-RF-Rx8" secondAttribute="leading" id="VX5-h2-lZD"/>
+                            <constraint firstItem="NQ5-RF-Rx8" firstAttribute="bottom" secondItem="IAK-MM-9Os" secondAttribute="bottom" id="aM2-QB-OO1"/>
+                            <constraint firstAttribute="trailing" secondItem="IAK-MM-9Os" secondAttribute="trailing" id="i7m-Bn-Il3"/>
+                            <constraint firstItem="IAK-MM-9Os" firstAttribute="top" secondItem="NQ5-RF-Rx8" secondAttribute="top" id="vXg-P4-Nja"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cEr-sC-6Zo"/>
-                    <connections>
-                        <outlet property="beastieCollectionView" destination="mBX-y5-pZ7" id="13i-GN-9hM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKs-9T-JD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -221,10 +260,15 @@
     </scenes>
     <resources>
         <image name="Billy Bob Joe" width="174" height="226"/>
+        <image name="Blue Beastie" width="174" height="226"/>
+        <image name="Green Beastie" width="174" height="226"/>
+        <image name="Orange Beastie" width="174" height="226"/>
+        <image name="Pink Beastie" width="174" height="226"/>
+        <image name="Purple Beastie" width="174" height="226"/>
+        <image name="Red Beastie" width="174" height="226"/>
         <image name="Star" width="100" height="100"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Teal Beastie" width="174" height="226"/>
+        <image name="Yellow Beastie" width="174" height="226"/>
         <systemColor name="systemTealColor">
             <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

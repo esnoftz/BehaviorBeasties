@@ -7,23 +7,23 @@
 
 import UIKit
 
-class ChooseBeastieViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ChooseBeastieViewController: UIViewController {
     
 
-    @IBOutlet weak var beastieCollectionView: UICollectionView!
+   
+    
+    
     
     var images: [String] = ["Blue Beastie", "Green Beastie", "Orange Beastie", "Pink Beastie", "Purple Beastie", "Red Beastie", "Teal Beastie", "Yellow Beastie"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        beastieCollectionView.delegate = self
-        beastieCollectionView.dataSource = self
         
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    /*func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         8
     }
     
@@ -35,10 +35,12 @@ class ChooseBeastieViewController: UIViewController, UICollectionViewDelegate, U
         let myCellImage = UIImage(named: images[indexPath.row])
         //cell.eventImage.image = myCellImage
         //TEST
-        cell.backgroundConfiguration?.image = myCellImage
+        //cell.backgroundConfiguration?.image = myCellImage
         
+        beastieImageView.image = myCellImage
+        cell.beastieImageView
         return cell
-    }
+    }*/
     
 
 }
