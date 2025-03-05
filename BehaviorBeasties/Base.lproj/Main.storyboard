@@ -141,6 +141,53 @@
             </objects>
             <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
         </scene>
+        <!--Parent Password View Controller-->
+        <scene sceneID="RBf-TE-oRe">
+            <objects>
+                <viewController id="rzv-pH-Fx9" customClass="ParentPasswordViewController" customModule="BehaviorBeasties" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2XF-oy-Kg2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your birth year..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Elk-1C-0WM">
+                                <rect key="frame" x="29" y="319" width="335" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ4-xs-MOW">
+                                <rect key="frame" x="158" y="403" width="76" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitYearAction:" destination="rzv-pH-Fx9" eventType="touchUpInside" id="1AC-rC-WwF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4a-LC-pMX">
+                                <rect key="frame" x="52" y="516" width="312" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hal-eq-O4Z"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8WO-2H-xNB"/>
+                    <connections>
+                        <outlet property="birthYearOutlet" destination="Elk-1C-0WM" id="Pad-J7-jsi"/>
+                        <outlet property="errorLabel" destination="Q4a-LC-pMX" id="NV8-Sy-ghL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wy-Qw-qer" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-787.02290076335873" y="1067.605633802817"/>
+        </scene>
         <!--Choose Beastie View Controller-->
         <scene sceneID="6Dp-2M-Zij">
             <objects>
@@ -265,7 +312,22 @@
                             <constraint firstItem="IAK-MM-9Os" firstAttribute="top" secondItem="NQ5-RF-Rx8" secondAttribute="top" id="vXg-P4-Nja"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cEr-sC-6Zo"/>
+                    <navigationItem key="navigationItem" id="cEr-sC-6Zo">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="hbB-Kc-1vV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="hVh-Gk-IDx">
+                                <rect key="frame" x="253" y="0.0" width="124" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Parent Mode">
+                                    <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="rzv-pH-Fx9" kind="show" identifier="parentModeSegue" id="tJ2-eS-2GO"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="tj5-8f-zSf" kind="show" identifier="chosenBeastieSegue" id="7Sf-En-Xgc"/>
                     </connections>
@@ -374,6 +436,9 @@
         <image name="Star" width="100" height="100"/>
         <image name="Teal Beastie" width="174" height="226"/>
         <image name="Yellow Beastie" width="174" height="226"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
