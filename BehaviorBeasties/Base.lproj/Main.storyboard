@@ -141,6 +141,130 @@
             </objects>
             <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="3kS-MY-m1q">
+            <objects>
+                <viewController id="HaP-e2-R1Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DEz-Wa-m9W">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="doN-QF-wEq"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tfu-SF-D3h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MX0-ET-Bhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2392" y="777"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oCz-4I-6Be">
+            <objects>
+                <viewController id="adW-iA-Mny" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BFM-xf-tSE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qfy-lm-DXA"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p7r-Cc-4DK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bT4-V7-nua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3050" y="1432"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HSk-oI-5Rm">
+            <objects>
+                <viewController id="58z-Tc-tai" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XUQ-dQ-AIv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eGQ-vb-Ccj"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dik-jE-CLF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLN-8Y-A3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2393" y="2159"/>
+        </scene>
+        <!--Parent Choice View Controller-->
+        <scene sceneID="tVc-kF-o0a">
+            <objects>
+                <viewController id="bPV-xO-tWg" customClass="ParentChoiceViewController" customModule="BehaviorBeasties" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJM-k4-sKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="u8P-kL-EMw">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1O-HU-uor">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="178.66666666666666"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add Tasks">
+                                            <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="HaP-e2-R1Y" kind="show" id="FMJ-p1-mVf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xk4-11-qJ2">
+                                        <rect key="frame" x="0.0" y="178.66666666666669" width="393" height="179"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add Rewards">
+                                            <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="adW-iA-Mny" kind="show" id="Pud-91-o1y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWs-V3-QQh">
+                                        <rect key="frame" x="0.0" y="357.66666666666669" width="393" height="178.66666666666669"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Give Stars">
+                                            <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="58z-Tc-tai" kind="show" id="E2R-Km-BYA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGG-B5-bZ8">
+                                        <rect key="frame" x="0.0" y="536.33333333333337" width="393" height="178.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Edit Family">
+                                            <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wGG-B5-bZ8" firstAttribute="height" secondItem="u8P-kL-EMw" secondAttribute="height" multiplier="0.25" id="5eE-zI-6tw"/>
+                                    <constraint firstItem="w1O-HU-uor" firstAttribute="height" secondItem="u8P-kL-EMw" secondAttribute="height" multiplier="0.25" id="9Z0-kU-Lat"/>
+                                    <constraint firstItem="WWs-V3-QQh" firstAttribute="height" secondItem="u8P-kL-EMw" secondAttribute="height" multiplier="0.25" id="XLT-2O-6iF"/>
+                                    <constraint firstItem="xk4-11-qJ2" firstAttribute="height" secondItem="u8P-kL-EMw" secondAttribute="height" multiplier="0.25" id="uC0-Re-yHY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r1M-xJ-nW8"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="u8P-kL-EMw" firstAttribute="leading" secondItem="r1M-xJ-nW8" secondAttribute="leading" id="5OK-km-X2C"/>
+                            <constraint firstItem="u8P-kL-EMw" firstAttribute="top" secondItem="r1M-xJ-nW8" secondAttribute="top" id="YSd-Oq-niD"/>
+                            <constraint firstItem="r1M-xJ-nW8" firstAttribute="trailing" secondItem="u8P-kL-EMw" secondAttribute="trailing" id="hUD-Nq-s6L"/>
+                            <constraint firstItem="r1M-xJ-nW8" firstAttribute="bottom" secondItem="u8P-kL-EMw" secondAttribute="bottom" id="nJl-gO-dw0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nFc-oq-0Rb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="573-KB-AzH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1527" y="1259"/>
+        </scene>
         <!--Parent Password View Controller-->
         <scene sceneID="RBf-TE-oRe">
             <objects>
@@ -167,8 +291,8 @@
                                     <action selector="submitYearAction:" destination="rzv-pH-Fx9" eventType="touchUpInside" id="1AC-rC-WwF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4a-LC-pMX">
-                                <rect key="frame" x="52" y="516" width="312" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4a-LC-pMX">
+                                <rect key="frame" x="40" y="480" width="312" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -182,6 +306,7 @@
                     <connections>
                         <outlet property="birthYearOutlet" destination="Elk-1C-0WM" id="Pad-J7-jsi"/>
                         <outlet property="errorLabel" destination="Q4a-LC-pMX" id="NV8-Sy-ghL"/>
+                        <segue destination="bPV-xO-tWg" kind="show" identifier="parentChoiceSegue" id="XoG-qI-C4f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wy-Qw-qer" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -314,7 +439,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cEr-sC-6Zo">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="hbB-Kc-1vV">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="hVh-Gk-IDx">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="hVh-Gk-IDx">
                                 <rect key="frame" x="253" y="0.0" width="124" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
