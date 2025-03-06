@@ -155,15 +155,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MX0-ET-Bhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2392" y="777"/>
+            <point key="canvasLocation" x="-2394.6564885496182" y="776.76056338028172"/>
         </scene>
-        <!--View Controller-->
+        <!--Reward View Controller-->
         <scene sceneID="oCz-4I-6Be">
             <objects>
-                <viewController id="adW-iA-Mny" sceneMemberID="viewController">
+                <viewController id="adW-iA-Mny" customClass="RewardViewController" customModule="BehaviorBeasties" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BFM-xf-tSE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter A Points Value For The Reward" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nxb-lM-vRE">
+                                <rect key="frame" x="16" y="396" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVa-s7-Ivl">
+                                <rect key="frame" x="92" y="477" width="209" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enter">
+                                    <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Billy Bob Joe" translatesAutoresizingMaskIntoConstraints="NO" id="gmu-ev-u20">
+                                <rect key="frame" x="-35" y="686" width="230" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of The Reward" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bp3-r1-eVt">
+                                <rect key="frame" x="16" y="317" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Qfy-lm-DXA"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
@@ -171,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT4-V7-nua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3050" y="1432"/>
+            <point key="canvasLocation" x="-3051.1450381679388" y="1431.6901408450706"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HSk-oI-5Rm">
@@ -208,7 +235,7 @@
                                             <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="HaP-e2-R1Y" kind="show" id="FMJ-p1-mVf"/>
+                                            <segue destination="HaP-e2-R1Y" kind="show" identifier="addTaskSegue" id="FMJ-p1-mVf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xk4-11-qJ2">
@@ -216,10 +243,10 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Add Rewards">
                                             <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
-                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                            <color key="baseBackgroundColor" red="0.91976243257522583" green="0.64738282536294656" blue="0.88224965079742046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="adW-iA-Mny" kind="show" id="Pud-91-o1y"/>
+                                            <segue destination="adW-iA-Mny" kind="show" identifier="addRewardSegue" id="Pud-91-o1y"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWs-V3-QQh">
@@ -230,7 +257,7 @@
                                             <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="58z-Tc-tai" kind="show" id="E2R-Km-BYA"/>
+                                            <segue destination="58z-Tc-tai" kind="show" identifier="giveStarsSegue" id="E2R-Km-BYA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGG-B5-bZ8">
@@ -238,7 +265,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Edit Family">
                                             <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
-                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                            <color key="baseBackgroundColor" red="0.91976243260000001" green="0.64738282540000003" blue="0.88224965079999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
