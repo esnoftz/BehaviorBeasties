@@ -9,6 +9,8 @@ import UIKit
 
 class AppData {
     static var selectedBeastie = ""
+    static var currentReward = Reward()
+    static var tasks = [Task]()
 }
 
 class ViewController: UIViewController {
