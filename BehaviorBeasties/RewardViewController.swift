@@ -27,8 +27,11 @@ class RewardViewController: UIViewController {
            var reward = Reward(name: name, cost: cost)
             AppData.currentReward = reward
             print(AppData.currentReward)
+            nameOutlet.text = ""
+            costOutlet.text = ""
             
         }
+        
     }
     
    

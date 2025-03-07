@@ -30,6 +30,8 @@ class TaskViewController: UIViewController {
             for theTask in AppData.tasks{
                 print(theTask)
             }
+            nameOutlet.text = ""
+            priceOutlet.text = ""
         }
     }
     
