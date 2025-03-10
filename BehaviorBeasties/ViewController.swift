@@ -11,6 +11,8 @@ class AppData {
     static var selectedBeastie = ""
     static var currentReward = Reward()
     static var tasks = [Task]()
+    static var taskIndex = -1
+    static var starsEarned = 0
 }
 
 class ViewController: UIViewController {
