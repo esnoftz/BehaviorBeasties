@@ -18,6 +18,9 @@ class StarsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         pickTaskOutlet.delegate = self
         pickTaskOutlet.dataSource = self
         labelOutlet.text = ""
+        
+        
+        //pickTaskOutlet.reloadAllComponents()
     }
     
    
@@ -32,6 +35,7 @@ class StarsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        //print("number of rows \(AppData.tasks.count)")
         return AppData.tasks.count
     }
     
@@ -43,6 +47,9 @@ class StarsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return AppData.tasks[row].name
     }
+    
+    
+    
     
 
 }

@@ -27,12 +27,14 @@ class TaskViewController: UIViewController {
             var price = Int(priceOutlet.text!)!
             var task = Task(name: name, points: price)
             AppData.tasks.append(task)
+            task.saveToFirebase()
             for theTask in AppData.tasks{
                 print(theTask)
             }
             nameOutlet.text = ""
             priceOutlet.text = ""
         }
+        
     }
     
 
