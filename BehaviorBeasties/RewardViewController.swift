@@ -26,6 +26,7 @@ class RewardViewController: UIViewController {
             var cost = Int(costOutlet.text!)!
            var reward = Reward(name: name, cost: cost)
             AppData.currentReward = reward
+            reward.saveToFirebase()
             print(AppData.currentReward)
             nameOutlet.text = ""
             costOutlet.text = ""

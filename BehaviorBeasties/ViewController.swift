@@ -45,6 +45,7 @@ class AppData {
             
         })
         
+        
         // REWARDS
         ref.child("rewards").observe(.childAdded, with: { (snapshot) in
             let dict = snapshot.value as! [String:Any]
@@ -54,7 +55,7 @@ class AppData {
             
             // adding the task object to the Student array
             // HELPPPPPPP!!
-            var yes = 0
+            /*var yes = 0
             for rew in self.currentReward {
                 if rew.name == r.name && rew.cost == r.cost {
                     yes = 1
@@ -63,7 +64,7 @@ class AppData {
             if yes == 0 {
                 self.currentReward.append(r)
                 print("reward added")
-            }
+            }*/
         
             //self.namesTableView.reloadData()
             
