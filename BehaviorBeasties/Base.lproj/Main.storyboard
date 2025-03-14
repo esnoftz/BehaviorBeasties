@@ -682,29 +682,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0x1-aE-Wfr">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="736.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="654.33333333333337"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evd-Ob-iz7">
-                                        <rect key="frame" x="0.0" y="736.33333333333337" width="393" height="81.666666666666629"/>
+                                        <rect key="frame" x="0.0" y="654.33333333333337" width="393" height="163.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9b-i0-HtQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="131" height="81.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="163.66666666666666"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" image="Goal List">
                                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6Y-pU-bS4">
-                                                <rect key="frame" x="131" y="0.0" width="131" height="81.666666666666671"/>
+                                                <rect key="frame" x="131" y="0.0" width="131" height="163.66666666666666"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" image="Star Can">
                                                     <color key="baseBackgroundColor" red="0.91976243257522583" green="0.64903050184753308" blue="0.87750016059282421" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF1-n1-kft">
-                                                <rect key="frame" x="262" y="0.0" width="131" height="81.666666666666671"/>
+                                                <rect key="frame" x="262" y="0.0" width="131" height="163.66666666666666"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" image="Reward Map">
                                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -720,8 +720,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="evd-Ob-iz7" firstAttribute="height" secondItem="8cg-VN-WgF" secondAttribute="height" multiplier="0.1" id="M0P-TJ-o7K"/>
-                                    <constraint firstItem="0x1-aE-Wfr" firstAttribute="height" secondItem="8cg-VN-WgF" secondAttribute="height" multiplier="0.9" id="WSn-E1-VNe"/>
+                                    <constraint firstItem="0x1-aE-Wfr" firstAttribute="height" secondItem="8cg-VN-WgF" secondAttribute="height" multiplier="0.8" id="WSn-E1-VNe"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -840,12 +839,15 @@
     <resources>
         <image name="Billy Bob Joe" width="174" height="226"/>
         <image name="Blue Beastie" width="174" height="226"/>
+        <image name="Goal List" width="100" height="100"/>
         <image name="Green Beastie" width="174" height="226"/>
         <image name="Orange Beastie" width="174" height="226"/>
         <image name="Pink Beastie" width="174" height="226"/>
         <image name="Purple Beastie" width="174" height="226"/>
         <image name="Red Beastie" width="174" height="226"/>
+        <image name="Reward Map" width="100" height="100"/>
         <image name="Star" width="100" height="100"/>
+        <image name="Star Can" width="99" height="115"/>
         <image name="Teal Beastie" width="174" height="226"/>
         <image name="Yellow Beastie" width="174" height="226"/>
         <systemColor name="systemIndigoColor">
