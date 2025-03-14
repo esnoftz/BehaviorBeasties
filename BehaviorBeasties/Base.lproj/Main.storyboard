@@ -939,6 +939,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eN3-Cy-OBt"/>
+                    <connections>
+                        <outlet property="costLabel" destination="1cf-zX-Jkb" id="T1F-60-h0V"/>
+                        <outlet property="prizeLabel" destination="BRX-bm-TLr" id="wwo-So-9tM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Co8-v3-y8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
