@@ -693,6 +693,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" image="Goal List">
                                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="2gm-vi-OQ5" kind="show" id="5Tc-Lh-rsC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6Y-pU-bS4">
                                                 <rect key="frame" x="131" y="0.0" width="131" height="163.66666666666666"/>
@@ -700,6 +703,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" image="Star Can">
                                                     <color key="baseBackgroundColor" red="0.91976243257522583" green="0.64903050184753308" blue="0.87750016059282421" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="ttz-ye-eC7" kind="show" id="Pob-69-rfn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF1-n1-kft">
                                                 <rect key="frame" x="262" y="0.0" width="131" height="163.66666666666666"/>
@@ -742,6 +748,124 @@
             </objects>
             <point key="canvasLocation" x="971.7557251908396" y="900"/>
         </scene>
+        <!--Bank View Controller-->
+        <scene sceneID="kje-J0-RFC">
+            <objects>
+                <viewController id="ttz-ye-eC7" customClass="BankViewController" customModule="BehaviorBeasties" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L8P-jv-p1r">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NOc-OQ-qbu">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dt-Jh-sLk">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="71.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Billy Bob Joe and Star" translatesAutoresizingMaskIntoConstraints="NO" id="bom-pr-b7F">
+                                        <rect key="frame" x="0.0" y="71.666666666666643" width="393" height="214.33333333333337"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star Can" translatesAutoresizingMaskIntoConstraints="NO" id="1cS-RE-iHb">
+                                        <rect key="frame" x="0.0" y="286" width="393" height="286"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPW-d1-oFF">
+                                        <rect key="frame" x="0.0" y="572" width="393" height="143"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1cS-RE-iHb" firstAttribute="height" secondItem="NOc-OQ-qbu" secondAttribute="height" multiplier="0.4" id="9dr-qT-mtD"/>
+                                    <constraint firstItem="4Dt-Jh-sLk" firstAttribute="height" secondItem="NOc-OQ-qbu" secondAttribute="height" multiplier="0.1" id="GuM-og-8UY"/>
+                                    <constraint firstItem="bom-pr-b7F" firstAttribute="height" secondItem="NOc-OQ-qbu" secondAttribute="height" multiplier="0.3" id="QN8-HI-fRa"/>
+                                    <constraint firstItem="bPW-d1-oFF" firstAttribute="height" secondItem="NOc-OQ-qbu" secondAttribute="height" multiplier="0.2" id="Z0c-mk-yBx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b81-Is-HLM"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="b81-Is-HLM" firstAttribute="bottom" secondItem="NOc-OQ-qbu" secondAttribute="bottom" id="6Pr-wJ-ala"/>
+                            <constraint firstItem="NOc-OQ-qbu" firstAttribute="top" secondItem="b81-Is-HLM" secondAttribute="top" id="DIo-KO-jwR"/>
+                            <constraint firstItem="NOc-OQ-qbu" firstAttribute="leading" secondItem="b81-Is-HLM" secondAttribute="leading" id="Kh0-4d-WL7"/>
+                            <constraint firstItem="b81-Is-HLM" firstAttribute="trailing" secondItem="NOc-OQ-qbu" secondAttribute="trailing" id="uSr-ZJ-B9a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8OK-mn-5sE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dby-Ep-M5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992" y="695"/>
+        </scene>
+        <!--Goals View Controller-->
+        <scene sceneID="lzI-jp-HV8">
+            <objects>
+                <viewController id="2gm-vi-OQ5" customClass="GoalsViewController" customModule="BehaviorBeasties" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K1N-v4-Pwe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Q5-iQ-64P">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tof-A2-YWv">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="143"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAQ-gm-pRA">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="143"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Billy Bob Joe" translatesAutoresizingMaskIntoConstraints="NO" id="xFf-CW-Tac">
+                                                <rect key="frame" x="275" y="0.0" width="118" height="143"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HAQ-gm-pRA" firstAttribute="width" secondItem="tof-A2-YWv" secondAttribute="width" multiplier="0.7" id="K4Q-uj-H6j"/>
+                                            <constraint firstItem="xFf-CW-Tac" firstAttribute="width" secondItem="tof-A2-YWv" secondAttribute="width" multiplier="0.3" id="KBH-zS-eDv"/>
+                                        </constraints>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-iF-OYE">
+                                        <rect key="frame" x="0.0" y="143" width="393" height="572"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kB9-qO-GtD">
+                                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kB9-qO-GtD" id="tHc-Un-670">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9jJ-iF-OYE" firstAttribute="height" secondItem="5Q5-iQ-64P" secondAttribute="height" multiplier="0.8" id="AJa-8o-LFr"/>
+                                    <constraint firstItem="tof-A2-YWv" firstAttribute="height" secondItem="5Q5-iQ-64P" secondAttribute="height" multiplier="0.2" id="iez-Ju-elZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fdh-WD-oZu"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Fdh-WD-oZu" firstAttribute="trailing" secondItem="5Q5-iQ-64P" secondAttribute="trailing" id="cQZ-cw-fsv"/>
+                            <constraint firstItem="5Q5-iQ-64P" firstAttribute="top" secondItem="Fdh-WD-oZu" secondAttribute="top" id="j1o-NZ-QAQ"/>
+                            <constraint firstItem="Fdh-WD-oZu" firstAttribute="bottom" secondItem="5Q5-iQ-64P" secondAttribute="bottom" id="lry-Sd-vhs"/>
+                            <constraint firstItem="5Q5-iQ-64P" firstAttribute="leading" secondItem="Fdh-WD-oZu" secondAttribute="leading" id="xM7-og-ye0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EXY-74-jT5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gic-3a-eCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620.61068702290072" y="1629.5774647887324"/>
+        </scene>
         <!--Display Reward View Controller-->
         <scene sceneID="vfS-r8-3xL">
             <objects>
@@ -759,7 +883,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6kU-0t-gVr">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Prize" translatesAutoresizingMaskIntoConstraints="NO" id="6kU-0t-gVr">
                                         <rect key="frame" x="0.0" y="71.666666666666657" width="393" height="500.33333333333337"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFv-VU-kgQ">
@@ -838,11 +962,13 @@
     </scenes>
     <resources>
         <image name="Billy Bob Joe" width="174" height="226"/>
+        <image name="Billy Bob Joe and Star" width="357" height="203"/>
         <image name="Blue Beastie" width="174" height="226"/>
         <image name="Goal List" width="100" height="100"/>
         <image name="Green Beastie" width="174" height="226"/>
         <image name="Orange Beastie" width="174" height="226"/>
         <image name="Pink Beastie" width="174" height="226"/>
+        <image name="Prize" width="960" height="720"/>
         <image name="Purple Beastie" width="174" height="226"/>
         <image name="Red Beastie" width="174" height="226"/>
         <image name="Reward Map" width="100" height="100"/>
@@ -850,6 +976,9 @@
         <image name="Star Can" width="99" height="115"/>
         <image name="Teal Beastie" width="174" height="226"/>
         <image name="Yellow Beastie" width="174" height="226"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
