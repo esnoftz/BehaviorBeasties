@@ -14,7 +14,7 @@ class AppData {
     static var selectedBeastie = ""
     static var currentReward = Reward()
     static var tasks = [Task]()
-    static var taskIndex = -1
+    static var taskIndex = 0
     static var starsEarned = 0
     
     static var ref: DatabaseReference!
@@ -67,6 +67,18 @@ class AppData {
             }*/
         
             //self.namesTableView.reloadData()
+            
+        })
+        
+        
+        // STARS
+        ref.child("stars").observe(.childAdded, with: { (snapshot) in
+            let dict = snapshot.value as! [String:Any]
+            let r = Reward(dict: dict)
+            
+            r.key = snapshot.key
+            
+            // figure this out idk
             
         })
     }

@@ -796,6 +796,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8OK-mn-5sE"/>
+                    <connections>
+                        <outlet property="bankTotalStarsLabel" destination="bPW-d1-oFF" id="e9U-va-C21"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dby-Ep-M5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
