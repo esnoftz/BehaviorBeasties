@@ -53,34 +53,28 @@ class AppData {
             
             r.key = snapshot.key
             
-            // adding the task object to the Student array
-            // HELPPPPPPP!!
-            /*var yes = 0
-            for rew in self.currentReward {
-                if rew.name == r.name && rew.cost == r.cost {
-                    yes = 1
-                }
-            }
-            if yes == 0 {
-                self.currentReward.append(r)
-                print("reward added")
-            }*/
-        
-            //self.namesTableView.reloadData()
             
         })
+        
+        
+        // figure out
+        /*AppData.starsEarned = ref.child("stars").
+        //value(forKey: "stars") as! Int
         
         
         // STARS
         ref.child("stars").observe(.childAdded, with: { (snapshot) in
-            let dict = snapshot.value as! [String:Any]
-            let r = Reward(dict: dict)
+            print("stars thingy \(snapshot.ref)")
+            //starsEarned = snapshot.key
             
-            r.key = snapshot.key
+            AppData.starsEarned = snapshot.value as! Int
+        })*/
             
-            // figure this out idk
             
-        })
+            
+        
+            
+    
     }
     
     
