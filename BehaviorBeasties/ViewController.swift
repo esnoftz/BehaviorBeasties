@@ -53,22 +53,18 @@ class AppData {
             
             r.key = snapshot.key
             
+            AppData.currentReward = r
+            
             
         })
         
         
-        // figure out
-        /*AppData.starsEarned = ref.child("stars").
-        //value(forKey: "stars") as! Int
-        
         
         // STARS
         ref.child("stars").observe(.childAdded, with: { (snapshot) in
-            print("stars thingy \(snapshot.ref)")
-            //starsEarned = snapshot.key
-            
+            print("stars thingy \(snapshot.ref)")            
             AppData.starsEarned = snapshot.value as! Int
-        })*/
+        })
             
             
             

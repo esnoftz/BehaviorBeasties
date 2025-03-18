@@ -28,7 +28,7 @@ class StarsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         AppData.starsEarned += AppData.tasks[AppData.taskIndex].points
         labelOutlet.text = "Stars Added Successfully!"
         print(AppData.starsEarned)
-        AppData.ref.child("stars").setValue(AppData.starsEarned)
+        AppData.ref.child("stars").childByAutoId().setValue(AppData.starsEarned)
 
     }
     

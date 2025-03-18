@@ -899,14 +899,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="osO-sc-HhA">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRX-bm-TLr">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="71.666666666666671"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="48"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRX-bm-TLr">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="143"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Prize" translatesAutoresizingMaskIntoConstraints="NO" id="6kU-0t-gVr">
-                                        <rect key="frame" x="0.0" y="71.666666666666657" width="393" height="500.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="143" width="393" height="429"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFv-VU-kgQ">
                                         <rect key="frame" x="0.0" y="572" width="393" height="71.666666666666629"/>
@@ -943,8 +943,8 @@
                                 <constraints>
                                     <constraint firstItem="vFv-VU-kgQ" firstAttribute="height" secondItem="osO-sc-HhA" secondAttribute="height" multiplier="0.1" id="MP2-CV-BmI"/>
                                     <constraint firstItem="BLO-Ek-Opz" firstAttribute="height" secondItem="osO-sc-HhA" secondAttribute="height" multiplier="0.1" id="R91-ey-U7J"/>
-                                    <constraint firstItem="BRX-bm-TLr" firstAttribute="height" secondItem="osO-sc-HhA" secondAttribute="height" multiplier="0.1" id="ibg-mm-Kod"/>
-                                    <constraint firstItem="6kU-0t-gVr" firstAttribute="height" secondItem="osO-sc-HhA" secondAttribute="height" multiplier="0.7" id="jHj-7Q-D0h"/>
+                                    <constraint firstItem="BRX-bm-TLr" firstAttribute="height" secondItem="osO-sc-HhA" secondAttribute="height" multiplier="0.2" id="ibg-mm-Kod"/>
+                                    <constraint firstItem="6kU-0t-gVr" firstAttribute="height" secondItem="osO-sc-HhA" secondAttribute="height" multiplier="0.6" id="jHj-7Q-D0h"/>
                                 </constraints>
                             </stackView>
                         </subviews>
