@@ -25,14 +25,19 @@ class TaskViewController: UIViewController {
         else{
             var name = nameOutlet.text!
             var price = Int(priceOutlet.text!)!
-            var task = Task(name: name, points: price)
-            AppData.tasks.append(task)
-            task.saveToFirebase()
-            for theTask in AppData.tasks{
-                print(theTask)
+            if price > 0{
+                var task = Task(name: name, points: price)
+                AppData.tasks.append(task)
+                task.saveToFirebase()
+                for theTask in AppData.tasks{
+                    print(theTask)
+                }
+                nameOutlet.text = ""
+                priceOutlet.text = ""
             }
-            nameOutlet.text = ""
-            priceOutlet.text = ""
+            else{
+                print("error")
+            }
         }
         
     }

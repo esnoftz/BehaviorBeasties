@@ -25,11 +25,17 @@ class RewardViewController: UIViewController {
             var name = nameOutlet.text!
             var cost = Int(costOutlet.text!)!
            var reward = Reward(name: name, cost: cost)
-            AppData.currentReward = reward
-            reward.saveToFirebase()
-            print(AppData.currentReward)
-            nameOutlet.text = ""
-            costOutlet.text = ""
+            
+            if cost > 0{
+                AppData.currentReward = reward
+                reward.saveToFirebase()
+                print(AppData.currentReward)
+                nameOutlet.text = ""
+                costOutlet.text = ""
+            }
+            else{
+               print("error")
+            }
             
         }
         

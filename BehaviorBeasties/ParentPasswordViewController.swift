@@ -23,12 +23,13 @@ class ParentPasswordViewController: UIViewController {
     @IBAction func submitYearAction(_ sender: UIButton) {
         errorLabel.text = ""
         if birthYearOutlet.text == "" {
-            errorLabel.text = "Enter your birth year!"
+            errorLabel.text = "Enter password!"
         } else {
-            if Int(birthYearOutlet.text!)! >= 1909 && Int(birthYearOutlet.text!)! <= 2007 {
+            if birthYearOutlet.text! == "seaverLuvsPoniesAndCamelCasing"{
                 performSegue(withIdentifier: "parentChoiceSegue", sender: nil)
-            } else {
-                errorLabel.text = "Invalid year!"
+            }
+            else{
+                errorLabel.text = "Incorrect Password"
             }
         }
         birthYearOutlet.text = ""
